@@ -1,0 +1,46 @@
+﻿<Window x:Class="Registro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro"
+        mc:Ignorable="d"
+        Title="                                                                                             Registro de entradas" Height="640" Width="800">
+    <Grid>
+            <Label Content= "EntradaId: " FontSize= "16" Margin= "140, 40, 1, 1"/>
+            <TextBox x:Name= "EntradaIdTextBox" Text= " 0 " Width= "150" Height= "25" Margin= "-140, -500, 1, 1"/>
+            <Button x:Name ="EntradaIdButtom" Margin="220, -500, 1, 1" Width="100" Height="25" Content= "Buscar"/>
+
+            <Label Content= "Fecha: " FontSize= "16" Margin= "140, 80, 1, 1"/>
+            <DatePicker x:Name= "FechaDatePicker" Width= "150" Height= "25" Margin= "-140, -415, 1, 1"/>
+
+            <Label Content= "SuplidorId: " FontSize= "16" Margin= "140, 120, 1, 1"/>
+            <ComboBox x:Name= "SuplidorIdComboBox" Width= "150" Height= "25" Margin= "-140, -325, 1, 1" />
+            <Label Content= "Consultar Entradas " FontSize= "11" Margin= "450, 120, 1, 1"/>
+
+            <Label Content= "CacaoId: " FontSize= "16" Margin= "140, 167, 1, 1"/>
+            <ComboBox x:Name= "CacaoIdComboBox" Width= "150" Height= "25" Margin= "-140, -240, 1, 1" />
+            <Button x:Name ="ConsultarButtom" Margin="225, -240, 1, 1" Width="100" Height="25" Content= "Consultar"/>
+
+            <Label Content= "Cantidad: " FontSize= "16" Margin= "140, 210, 1, 1"/>
+            <TextBox x:Name= "CantidadTextBox" Text=" 0 "  Width= "150" Height= "25" Margin= "-140, -150, 1, 1"/>
+
+            
+            <Label Content= "Costo: " FontSize= "16" Margin= "140, 260, 1, 1"/>
+            <TextBox x:Name= "CostoTextBox" Text= " 0 " Width= "150" Height= "25" Margin= "-140, -50, 1, 1"/>
+            <Label Content= "Fecha Creacion: " FontSize= "16" Margin= "450, 270, 1, 1"/>
+
+            <Label Content= "Total: " FontSize= "16" Margin= "140, 310, 1, 1"/>
+            <Label Content= "0" FontSize= "16" Margin= "245, 310, 1, 1"/>
+            <Label Content= "04/01/2020 " FontSize= "16" Margin= "450, 310, 1, 1"/>
+
+            <Label Content= "Creado Por: "  FontSize= "16" Margin= "140, 350, 1, 1"/>
+            <Label Content= "Admin " FontSize= "16" Margin= "245, 350, 1, 1"/>
+            <Label Content= "Fecha Modificacion: " FontSize= "16" Margin= "450, 350, 1, 1"/>
+            <Label Content= "04/01/2020 " FontSize= "16" Margin= "450, 390, 1, 1"/>
+
+            <Button x:Name ="NuevoButtom" Margin="-360, 320, 1, 1" Width="100" Height="30" Content= "Nuevo"/>
+            <Button x:Name ="GuardarButtom" Margin="-80, 320, 1, 1" Width="100" Height="30" Content= "Guardar"/>
+            <Button x:Name ="EliminarButtom" Margin="290, 320, 1, 1" Width="100" Height="30" Content= "Eliminar"/>
+    </Grid>
+</Window>
